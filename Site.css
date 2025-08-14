@@ -1,0 +1,123 @@
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f8fdf9; /* apenas verdoso */
+}
+
+.container{
+    background-color: 
+}
+
+.navbar .nav-link {
+    color: #69b378;
+}
+
+    .navbar .nav-link:hover {
+        color: #157246; /* verde más intenso al pasar el mouse */
+    }
+
+.strong {
+    color: #444444;
+}
+
+.h3 {
+    color: #157246;
+}
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .body-content {
+        padding: 0;
+    }
+}
+
+.row {
+    margin-bottom: 20px; /* Espacio de 10px entre líneas */
+}
+
+/* Contenedor principal */
+.container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Encabezado */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #157246;
+    }
+
+.lead {
+    color: #555;
+}
+
+/* Espaciado entre columnas */
+.row {
+    row-gap: 40px; /* espacio vertical entre filas en pantallas pequeñas */
+}
+
+/* Grid de productos dentro de cada categoría */
+.product-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* espacio entre tarjetas */
+}
+
+/* Tarjeta del producto */
+.card {
+    background-color: #E6F5EC;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    padding: 15px;
+}
+
+    /* Imagen del producto */
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+/* Texto del producto */
+.card-body h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 1rem;
+    color: #157246;
+    font-weight: bold;
+}
+
+/* Efecto hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive: en pantallas muy pequeñas, centramos y limitamos ancho */
+@media (max-width: 576px) {
+    .card {
+        max-width: 320px;
+        margin: 0 auto; /* centra horizontalmente */
+    }
+}
